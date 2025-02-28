@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritiméticos</title>
+</head>
+<body>
+    <script>
+        var a = Number(window.prompt('Resolvendo Bhaskara \n Digite o valor de a : '))
+        var b = Number(window.prompt('Agora, digite o valor de b : '))
+        var c = Number(window.prompt('Por ultimo, valor de c : '))
+        var delta = b**2 - 4*a*c
+        var x = (-b + delta**(1/2)) / (2*a)
+        var X = (-b - delta**(1/2)) / (2*a)
+        document.write(`Δ = ${delta} <br> x1 = ${x} <br> x2 = ${X}`)
+    </script>
+</body>
+</html>
