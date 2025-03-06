@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{
+            background-color: blue;
+            color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>
+        Primeiro Parágrafo - Olá Mundo
+    </p>
+    <p>
+        Estudando <strong>DOM</strong>
+    </p>
+    <div id="id">Seleção por Id</div>
+    <div name="nome">Seleção por Name</div>
+    <div class="selector">Seleção por querySelector</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d0 = window.document.getElementById('id')
+        var d1 = window.document.getElementsByName('nome')[0]
+        var d2 = window.document.querySelector('div.selector')
+
+        d0.style.backgroundColor = 'cyan'
+        d0.style.color = 'black'
+        d0.style.width = 'fit-content'
+        d0.style.padding = '5px'
+        d0.style.borderRadius = '5px'
+
+        d1.style.color = 'purple'
+
+        d2.style.backgroundColor = 'white'
+        d2.style.color = 'black'
+        d2.style.width = 'fit-content'
+        d2.style.padding = '5px'
+        d2.style.borderRadius = '5px'
+
+
+        document.write(p1.innerHTML)
+        p1.style.color = 'red'
+
+        window.alert(p1.innerHTML)
+    </script>
+</body>
+</html>
